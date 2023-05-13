@@ -126,7 +126,7 @@ body{
     left: 0;
     min-width: 250px;
     width: 250px;
-    height: calc(91vh - 60px);
+    height: calc(100vh - 60px);
     background: #fff;
     padding-right: 10px;
 }
@@ -253,8 +253,19 @@ body{
 }
 
 .footer{
-    background-color: #242424;
+    background-color: black;
     padding: 20px;
     color: white;
-    text-align: center;
+}
+.foot-text{
+    margin-left: 400px;
+}
+.Copyright{
+    font-family:'Times New Roman', Times, serif;
+}
+.foot-img{
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 40%;
+    float: right;
 }
