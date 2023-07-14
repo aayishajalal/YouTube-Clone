@@ -33,7 +33,7 @@
         var firstpassword = document.f1.password.value;
         var secondpassword = document.f1.password2.value;
         var name=document.f1.name.value;
-        if (firstpassword == secondpassword && name.length!=0) {
+        if (firstpassword == secondpassword && name.length!=0 && name!= [0-9]) {
           window.open("index.html")
         } else {
           alert("password must be same!");
