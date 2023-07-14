@@ -60,7 +60,7 @@ searchBtn.addEventListener('click', () => {
         location.href = searchLink + searchInput.value;
     }
 })
-searchBtn.addEventListener('click', () => {
+searchInput.addEventListener('keydown', () => {
     if(searchInput.value.length){
         location.href = searchLink + searchInput.value;
     }
