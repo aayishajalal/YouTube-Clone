@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notifications</title>
+    <style>
+      .back-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      @media (min-aspect-ratio: 16/9) {
+        .back-video {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      @media (max-aspect-ratio: 16/9) {
+        .back-video {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .notify-container {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.25);
+      }
+      .notify-bar {
+        height: 5%;
+        font-size: 25px;
+      }
+      .notify-area {
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        margin-bottom: 8px;
+      }
+      .notify-text {
+        font-size: 40px;
+        background: -webkit-linear-gradient(#8e2de2, #4a00e0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 25px;
+        margin-top: 6px;
+        margin-bottom: 0;
+        color: black;
+        font-weight: bold;
+      }
+      .channel-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10px;
+      }
+
+      .title {
+        width: 100%;
+        height: 10px;
+        margin-left: 20px;
+        margin-top: 0;
+      }
+
+      .thumbnail {
+        width: 30%;
+        height: 20%;
+        object-fit: contain;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline class="back-video">
+      <source
+        src="./img/pexels-enrique-hoyos-3571264-3840x2160-30fps.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="notify-container">
+      <div class="notify-bar">
+        <p class="notify-text">Notifications</p>
+        <hr />
+      </div>
+      <a href="https://youtu.be/KSqTLHWnL-s"
+        ><div class="notify-area">
+          <img src="./channelimg/channel-5.jpg" alt="" class="channel-icon" />
+          <p class="title">
+            Increase your BRAIN POWER: Jim Kwik shares TIPS for Cognitive
+            Performance
+          </p>
+          <img src="./channelimg/thumbnail-6.webp" alt="" class="thumbnail" />
+        </div>
+      </a>
+      <a href="https://youtu.be/L2n0fYCwjqo">
+        <div class="notify-area">
+          <img src="./channelimg/channel-10.jpg" alt="" class="channel-icon" />
+          <p class="title">
+            ഈ 2 പ്രാക്റ്റീസ് ജീവിതത്തെ അടിമുടി മാറ്റും - Malayalam Motivation
+          </p>
+          <img src="./channelimg/thumbnail-13.webp" alt="" class="thumbnail" />
+        </div>
+      </a>
+      <a href="https://youtu.be/z3bQaFnybto"
+        ><div class="notify-area">
+          <img src="./channelimg/channel-3.jpg" alt="" class="channel-icon" />
+          <p class="title">Interrogating Christopher | Mammootty | Sneha</p>
+          <img src="./channelimg/thumbnail-4.webp" alt="" class="thumbnail" />
+        </div>
+      </a>
+      <a href="https://youtu.be/inkj8E2urf4">
+        <div class="notify-area">
+          <img src="./channelimg/channel-9.jpg" alt="" class="channel-icon" />
+          <p class="title">
+            4 SECRET TRICKS to GENERATE 1Lakh/Month Online தமிழ்🔥🚀Noone told
+            you these
+          </p>
+          <img src="./channelimg/thumbnail-11.webp" alt="" class="thumbnail" />
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=e_04ZrNroTo">
+        <div class="notify-area">
+          <img src="./channelimg/channel-2.jpg" alt="" class="channel-icon" />
+          <p class="title">
+            Wheels on the Bus | CoComelon Nursery Rhymes & Kids Songs
+          </p>
+          <img src="./channelimg/thumbnail-12.webp" alt="" class="thumbnail" />
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=6KzeuDstzOY">
+        <div class="notify-area">
+          <img src="./channelimg/channel-7.jpg" alt="" class="channel-icon" />
+          <p class="title">
+            Don - Jalabulajangu Video | Sivakarthikeyan | Anirudh Ravichander
+          </p>
+          <img src="./channelimg/thumbnail-2.webp" alt="" class="thumbnail" />
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=fYrx6nq_SR0">
+        <div class="notify-area">
+          <img src="./channelimg/channel-4.jpg" alt="" class="channel-icon" />
+          <p class="title">
+            GIRL SHAMED For Playing ROBLOX GAMES Ft. @KreekCraft | Dhar Mann
+          </p>
+          <img src="./channelimg/thumbnail-dhar..jpg" alt="" class="thumbnail" />
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
