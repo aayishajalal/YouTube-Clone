@@ -5,7 +5,7 @@ import ReactMapboxGl, { Marker } from "react-mapbox-gl";
 import "./App.css";
 
 const Map = ReactMapboxGl({
-  accessToken: "YOUR_MAPBOX_ACCESS_TOKEN", // Replace 'YOUR_MAPBOX_ACCESS_TOKEN' with your actual Mapbox access token
+  accessToken: "pk.eyJ1IjoiYWF5aXNoYW5vb3JhIiwiYSI6ImNsdXQ0enJvcDBvMGoybW4wbzI5MTQ3bm0ifQ.9ORT0nr4-tMzm3uJ6Teb_Q", // Replace 'YOUR_MAPBOX_ACCESS_TOKEN' with your actual Mapbox access token
 });
 
 function App() {
