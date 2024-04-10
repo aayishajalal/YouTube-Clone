@@ -1,0 +1,56 @@
+#Geolocation code
+
+import React, { useState, useEffect } from "react";
+import ReactMapboxGl, { Marker } from "react-mapbox-gl";
+import "./App.css";
+
+const Map = ReactMapboxGl({
+  accessToken: "YOUR_MAPBOX_ACCESS_TOKEN", // Replace 'YOUR_MAPBOX_ACCESS_TOKEN' with your actual Mapbox access token
+});
+
+function App() {
+  const [center, setCenter] = useState([0, 0]);
+  const [zoom, setZoom] = useState([14]);
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setCenter([position.coords.longitude, position.coords.latitude]);
+        },
+        (error) => {
+          console.error("Error getting current position:", error);
+        }
+      );
+    } else {
+      console.error("Geolocation is not supported by this browser.");
+    }
+  }, []);
+
+  return (
+    <div className="App">
+      <h1>Location Tracker</h1>
+      <div style={{ height: "500px", width: "100%" }}>
+        <Map
+          style="mapbox://styles/mapbox/streets-v11" // You can choose any Mapbox style here
+          center={center}
+          zoom={zoom}
+        >
+          <Marker coordinates={center} anchor="bottom">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_marker.svg"
+              alt="marker"
+              style={{ width: "30px", height: "30px" }}
+            />
+          </Marker>
+        </Map>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+#
